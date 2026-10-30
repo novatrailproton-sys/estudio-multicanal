@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="studio-token" content="__STUDIO_TOKEN__" />
+    <meta name="color-scheme" content="dark" />
+    <title>Estudio Multicanal</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="brand" href="/"
+        ><span class="brand-icon">▶</span
+        ><span>Estudio<span class="brand-sub">MULTICANAL</span></span></a
+      >
+      <div class="workspace-label">TU ESPACIO DE CREACIÓN</div>
+      <nav aria-label="Principal">
+        <button data-view="projects" class="nav active">
+          <span>▦</span> Proyectos
+        </button>
+        <button data-view="queue" class="nav">
+          <span>☷</span> Cola de producción <b id="queue-count">0</b>
+        </button>
+        <button data-view="channels" class="nav">
+          <span>◉</span> Mis canales
+        </button>
+        <button data-view="connections" class="nav">
+          <span>⌁</span> Conexiones
+        </button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="budget-dot"></div>
+        <strong>Presupuesto: $0</strong>
+        <p>Sin cambios automáticos a servicios de pago.</p>
+        <span class="version">VERSIÓN 0.1 · LOCAL</span>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <span id="breadcrumb">Mi espacio / Proyectos</span
+        ><span class="local-pill">● Guardado en tu equipo</span>
+      </header>
+      <main id="main" aria-live="polite">
+        <div class="empty">Abriendo tu estudio…</div>
+      </main>
+      <footer>
+        Las cuotas gratuitas dependen de cada proveedor. La cola continúa
+        mientras el estudio esté abierto.
+      </footer>
+    </div>
+    <dialog id="modal"><div id="modal-content"></div></dialog>
+    <div id="toast" role="status" class="toast hidden"></div>
+    <input id="file-input" type="file" hidden />
+  </body>
+</html>
