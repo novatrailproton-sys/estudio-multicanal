@@ -1,0 +1,23 @@
+{
+  "channel": {
+    "name": "Relatos de viaje",
+    "theme": "Ficción y viajes",
+    "audience": "Público general",
+    "style": "Warm natural travel photography, peaceful coastlines, golden sunlight",
+    "language": "es"
+  },
+  "project": {
+    "title": "La isla al amanecer · prueba",
+    "format": "pilot",
+    "duration": 15,
+    "mode": "narration",
+    "aspect": "9:16",
+    "content_type": "fiction",
+    "audio_source": "riva",
+    "image_source": "sdxl",
+    "planner": "manual",
+    "script": "En aquella isla, el amanecer tenía un color distinto. Clara encontró un pequeño bote y decidió explorar la costa.",
+    "visual_bible": "Peaceful tropical coastline, small weathered wooden boat, turquoise sea, warm golden sunrise, natural travel photography."
+  },
+  "prompt": "A peaceful tropical island coastline at sunrise, a small empty wooden boat on turquoise water, golden sunlight, lush hills in distance, cinematic natural travel photography, vertical composition, no text, no people."
+}
