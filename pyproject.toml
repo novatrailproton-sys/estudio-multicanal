@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "estudio-multicanal"
+version = "0.1.0"
+description = "Estudio local de producción de videos con APIs y presupuesto cero por defecto"
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.115,<1", "uvicorn>=0.32,<1", "httpx[socks]>=0.28,<1", "pillow>=11,<13", "python-multipart>=0.0.20,<1", "imageio-ffmpeg>=0.6,<1", "keyring>=25,<26"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+estudio = "estudio.__main__:main"
+
+[tool.setuptools.package-data]
+estudio = ["web/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

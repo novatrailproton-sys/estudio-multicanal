@@ -1,0 +1,13 @@
+# Runtime versions used for the acceptance run. Install with:
+# python -m pip install -r requirements-tested.txt
+# python -m pip install -e .
+fastapi==0.162.0
+uvicorn==0.54.0
+httpx[socks]==0.28.1
+pydantic==2.14.1
+pillow==12.3.0
+python-multipart==0.0.32
+keyring==25.7.0
+socksio==1.0.0
+imageio-ffmpeg==0.7.0
+# Both system FFmpeg 6.1.1 and imageio's Linux FFmpeg 7.0.2 were tested.
